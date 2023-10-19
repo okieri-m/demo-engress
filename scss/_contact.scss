@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import "variables";
+
+.contact_fv{
+    background-image: url("../images/contact/cta.png");
+}
+.contactForm_wrapper{
+    padding-top: 58px;
+}
+.form{
+    padding-top: 40px;
+    margin-bottom: 80px;
+    .form_item{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 18px;
+        &:nth-child(4){
+            margin-bottom: 22px;
+        }
+        &:nth-child(5){
+            .form_item-text{
+                margin-bottom: 11px;
+            }
+            label{
+                display: flex;
+                align-items: center;
+                input{
+                    height: 20px;
+                }
+                    span{
+                        padding-left: 20px;
+                    }
+            }
+        }
+        input{
+            border: 0.5px solid $dark-blue;
+            max-width: 700px;
+            height: 50px;
+            padding: 16px 20px;
+        }
+        textarea{
+            padding: 16px 20px;
+            border: 0.5px solid $dark-blue;
+        }
+    }
+    .privacy_agreement-area{
+        text-align: center;
+        margin: 26px auto 45px;
+        .privacy_agreement-text{
+            margin-bottom: 27px;
+            a{
+                color: $orange;
+                text-decoration: underline;
+            }
+        }
+        .privacy_agreement-area-check{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            input[type="checkbox"]  {
+                margin: 0;
+                padding: 0;
+                background: none;
+                border: none;
+                border-radius: 0;
+                outline: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                cursor: pointer;
+                padding-left: 30px;/*label手前にチェックボックス用の余白を開ける*/
+                vertical-align: middle;
+                position: relative;
+                &::before{
+                    content: "";
+                display: block; 
+                position: absolute;
+                background-color: #fff;
+                border-radius: 0%;
+                border: 1px solid #666464;
+                width: 20px;/*チェックボックスの横幅*/
+                height: 20px;/*チェックボックスの縦幅*/
+                transform: translateY(-50%);
+                top: 50%;
+                left: 5px;
+                }
+                &::after{
+                    content: "";
+                display: block; 
+                position: absolute;
+                border-bottom: 3px solid #666464;/*チェックの太さ*/
+                border-left: 3px solid #666464;/*チェックの太さ*/
+                opacity: 0;/*チェック前は非表示*/
+                height: 6px;/*チェックの高さ*/
+                width: 11px;/*チェックの横幅*/
+                transform: rotate(-45deg);
+                top: -7px;/*チェック時の位置調整*/
+                left: 10px;/*チェック時の位置調整*/
+                }
+                &:checked::after{
+                    opacity: 1;/*チェック後表示*/
+                  }
+              }
+        }
+    }
+    .form_submit-btn-wrapper{
+        max-width: 200px;
+        padding: 17px 0;
+        background: $dark-blue;
+        border-radius: 5px;
+        text-align: center;
+        margin: auto;
+        .form_submit-btn{
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            
+        }
+    }
+}
+// サンクスページ
+.thanks_intro{
+    margin: 83px auto 82px;
+    text-align: center;
+}
+.thanks_text{
+    margin-bottom: 82px;
+}
+.back-to-top{
+    a{
+        text-decoration: underline;
+    }
+}

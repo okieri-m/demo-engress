@@ -1,0 +1,107 @@
+@charset "utf-8";
+$orange: #F5A623;
+$dark-blue: #1B224C;
+
+
+// レスポンシブブレイクポイント
+$pc: 1024px; 
+$tab: 945px; 
+$sp: 768px;
+@mixin pc {
+    @media (max-width: ($pc)) {
+        @content;
+    }
+    }
+    @mixin tab {
+    @media (max-width: ($tab)) {
+        @content;
+    }
+    }
+    @mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+    }
+body{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    color: $dark-blue;
+    line-height: 100%;
+}
+a{
+    color: $dark-blue;
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    max-width: 900px;
+    margin: auto;
+    padding: 63px 20px 0;
+}
+.bg-darkblue{
+    background-color: $dark-blue;
+}
+.section_h1title{
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px; /* 100% */
+}
+.section_h2title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5;
+    @include sp {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+// ボタンデザイン共通
+.btn-orange{
+    background-color: $orange;
+    a{
+        color: white;
+    }
+}
+.btn-blue{
+    background-color: $dark-blue;
+    a{
+        color: white;
+    }
+}
+.round-btn{
+    width: 260px;
+    text-align: center;
+    border-radius: 31px;
+    a{
+        padding: 22px 0;
+    }
+}
+
+// チャイルドページ共通スタイル
+.childPage_fv-container{
+    background-size: cover;
+    display: table;
+    width: 100%;
+    height: 220px;
+}
+.childPage_fv-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+}
+.childPage_fv-h1title{
+    
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px; /* 100% */
+}

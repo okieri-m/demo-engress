@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engress - お問い合わせ・資料請求 -</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header_wrapper">
+            <div class="header_left">
+                <div><a href="/"><img src="./images/HOME/Engress-logo.svg" alt="Engress logo"></a></div>
+                <nav class="header_nav">
+                    <ul class="header_navList">
+                        <li><a href="/">ホーム</a></li>
+                        <li><a href="notice.html">お知らせ</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                        <li><a href="price.html">コース・料金</a></li>
+                        <li class="header_nav-spContact">
+                            <div class="square-btn btn-orange">
+                                 <a href="contact.html">資料請求</a>
+                             </div>
+                            <div class="square-btn btn-blue">
+                                <a href="contact.html">お問い合わせ</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="header_sp-menubtn"><span></span><span></span><span></span></div>
+            <div class="header_right">
+                <div class="header_call">
+                    <span class="header_call-date">平日08:00〜20:00</span>
+                    <span class="header_call-num"><img src="./images/HOME/juwaki.png" alt="お問い合わせ番号">0123-456-7890</span>
+                </div>
+                <div class="square-btn btn-orange header_brochere">
+                    <a href="contact.html">資料請求</a>
+                </div>
+                <div class="square-btn btn-blue header_contact-btn">
+                    <a href="contact.html">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main_container" class="main_container">
+        <div class="childPage_fv-container contact_fv">
+            <div class="childPage_fv-wrapper wrapper">
+                <h1 class="childPage_fv-h1title">お問い合わせ・資料請求</h1>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ブログ</a></li>
+            </ul>
+        </div>
+        <section id="contactForm" class="contactForm">
+            <div class="contactForm_container">
+                <div class="contactForm_wrapper wrapper">
+                   <p class="contactForm_intro">弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</p>
+                   <form action="" method="" id="form" class="form">
+                    <div class="form_item">
+                        <label for="company">会社名</label>
+                        <input id="company" type="text" name="company" placeholder="Engress">
+                    </div>
+                    <div class="form_item">
+                        <label for="name">氏名</label>
+                        <input id="name" type="text" name="name" placeholder="田中　太郎">
+                    </div>
+                    <div class="form_item">
+                        <label for="email">メールアドレス</label>
+                        <input id="email" type="text" name="email" placeholder="example@example.com">
+                    </div>
+                    <div class="form_item">
+                        <label for="tel">電話番号</label>
+                        <input id="tel" type="text" name="tel" placeholder="01-2345-6789">
+                    </div>
+                    <div class="form_item">
+                        <p class="form_item-text">お問い合わせの種類を選択してください（資料請求の方は資料請求を選択ください）</p>
+                        <label class="form_item-reason" for="contact-reason"><input type="radio" name="contact-reason" value="商談のご相談"><span>商談のご相談</span></label>
+                        <label class="form_item-reason" for="contact-reason"><input type="radio" name="contact-reason" value="サービスに関するお問い合わせ"><span>サービスに関するお問い合わせ</span></label>
+                        <label class="form_item-reason" for="contact-reason"><input type="radio" name="contact-reason" value="資料請求"><span>資料請求</span></label>
+                        <label class="form_item-reason" for="contact-reason"><input type="radio" name="contact-reason" value="その他"><span>その他</span></label>
+                    </div>
+                    <div class="form_item">
+                        <label for="tel">お問い合わせ内容</label>
+                        <textarea id="comment" rows="10" cols="30" placeholder="入力して下さい"></textarea>
+                    </div>
+                    <div class="privacy_agreement-area">
+                        <p class="privacy_agreement-text"><a href="">プライバシーポリシー</a>に同意の上、送信ください。</p>
+                        <label class="privacy_agreement-area-check" for="privacy_agree"><input type="checkbox" name="privacy_agree" value="プライバシーポリシーに同意する"><span>プライバシーポリシーに同意する</span></label>
+                    </div>
+                    <div class="form_submit-btn-wrapper">
+                        <button type='submit' name="submit" class="form_submit-btn">送信する</button>
+                    </div>
+                   </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer bg-darkblue">
+        <div class="footer_container">
+            <div class="footer_wrapper wrapper">
+                <ul class="footer_nav-list">
+                    <li><a href="/">ホーム</a></li>
+                    <li><a href="notice.html">お知らせ</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="price.html">コース・料金</a></li>
+                </ul>
+                <div class="footer_right">
+                    <div class="footer-logo">
+                        <a href=""><img src="./images/HOME/Engress-footer-logo.png" alt="Engressフッターロゴ"></a>
+                    </div>
+                    <div class="footer-call">
+                        <span class="footer_call-num"><img src="./images/HOME/juwaki-02.png" alt="お問い合わせ番号">0123-456-7890</span>
+                        <span class="footer_call-date">平日08:00〜20:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">&copy; 2020 Engress.</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

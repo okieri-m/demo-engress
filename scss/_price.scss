@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import "variables";
+
+.price_fv{
+    background-image: url("../images/price/plan.png");
+}
+.price_chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    margin-top: 60px;
+    @include sp{
+        display: block;
+    }
+}
+.price_table-plus{
+    @include sp{
+        text-align: center;
+        margin: 30px auto;
+    }
+}
+.price_enroll, .price_monthly{
+    min-width: 280px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    background: $dark-blue;
+    color: #fff;
+    padding: 33px 20px;
+}
+.price_text{
+    margin-top: 45px;
+    line-height: normal;
+}
+
+// 料金表
+
+.price_table-wrapper{
+    padding-top: 90px;
+    margin-bottom: 35px;
+    box-sizing: content-box;
+}
+.price_table-list{
+    margin: 106px auto 35px;
+    display: flex;
+    text-align: center;
+    gap: 6px;
+    width: 900px;
+}
+.price_table-item{
+    &:nth-of-type(3){
+        margin-top: -46px;
+    }
+}
+.price_tableCarriculum-wrapper{
+    border: 1px solid $dark-blue;
+    border-top: none;
+    padding: 30px 5px;
+    min-height: 412px;
+}
+.price_table-lable{
+    min-width: 220px;
+    padding: 20px 0;
+    background: $dark-blue;
+    &.orange-title{
+        background: $orange;
+    }
+    .price_table-title{
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        span{
+            margin-bottom: 22px;
+            display: block;
+        }
+    }
+}
+.price_table-price{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    &.orange-text{
+        color: $orange;
+    }
+}
+.price_table-curriculumList{
+    margin-top: 46px;
+    li{
+        margin-bottom: 15px;
+        position: relative;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
