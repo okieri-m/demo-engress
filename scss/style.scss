@@ -273,6 +273,13 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 1.5;
+    span{
+        background: -webkit-linear-gradient(transparent 60%, $orange 60%);   
+        background: -moz-linear-gradient(transparent 60%, $orange 60%);
+        background: -ms-linear-gradient(transparent 60%, $orange 60%);
+        background: -o-linear-gradient(transparent 60%, $orange 60%);
+        background: linear-gradient(transparent 60%, $orange 60%);
+    }
     @include sp{
         font-size: 30px;
     } 
@@ -351,8 +358,11 @@
         .small_banner-textLink{
             margin: 27px auto auto;
             border: 1px solid #fff;
+            width: 200px;
             a{
                 color: white;
+                padding: 17px 0;
+                font-weight: 700;
             }
         }
     }
@@ -623,7 +633,7 @@
 
 // バナー
 .banner{
-    background-image: url("../images/HOMe/cta.png");
+    background-image: url("../images/HOMe/cta-1280-260.png");
     background-size: cover;
     position: relative;
     height: 260px;
@@ -639,6 +649,10 @@
     text-align: center;
     .banner-btn{
         margin: 13px auto 17px;
+        width: 280px;
+        a{
+            padding: 17px 0;
+        }
     }
     .contact_txtbtn{
         a{

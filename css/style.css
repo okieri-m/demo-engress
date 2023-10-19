@@ -25,6 +25,21 @@ li {
   background-color: #1B224C;
 }
 
+.breadcrumbs {
+  background: #F8F8F8;
+}
+.breadcrumbs ul {
+  padding: 20px 0;
+  height: 50px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs ul li {
+  margin: 0 5px;
+}
+
 .section_h1title {
   color: #FFF;
   text-align: center;
@@ -118,6 +133,21 @@ li {
 
 .bg-darkblue {
   background-color: #1B224C;
+}
+
+.breadcrumbs {
+  background: #F8F8F8;
+}
+.breadcrumbs ul {
+  padding: 20px 0;
+  height: 50px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs ul li {
+  margin: 0 5px;
 }
 
 .section_h1title {
@@ -315,6 +345,21 @@ li {
 
 .bg-darkblue {
   background-color: #1B224C;
+}
+
+.breadcrumbs {
+  background: #F8F8F8;
+}
+.breadcrumbs ul {
+  padding: 20px 0;
+  height: 50px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs ul li {
+  margin: 0 5px;
 }
 
 .section_h1title {
@@ -621,6 +666,21 @@ li {
   background-color: #1B224C;
 }
 
+.breadcrumbs {
+  background: #F8F8F8;
+}
+.breadcrumbs ul {
+  padding: 20px 0;
+  height: 50px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs ul li {
+  margin: 0 5px;
+}
+
 .section_h1title {
   color: #FFF;
   text-align: center;
@@ -746,7 +806,7 @@ li {
   line-height: 1.5;
 }
 
-.notice_article {
+#notice_article {
   line-height: 1.5;
   margin-bottom: 84px;
 }
@@ -854,6 +914,21 @@ li {
 
 .bg-darkblue {
   background-color: #1B224C;
+}
+
+.breadcrumbs {
+  background: #F8F8F8;
+}
+.breadcrumbs ul {
+  padding: 20px 0;
+  height: 50px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.breadcrumbs ul li {
+  margin: 0 5px;
 }
 
 .section_h1title {
@@ -1055,6 +1130,10 @@ li {
 
 .back-to-top a {
   text-decoration: underline;
+}
+
+.body-thanksPage {
+  height: calc(100vh - 268px);
 }
 
 .header {
@@ -1347,6 +1426,13 @@ li {
   font-weight: 700;
   line-height: 1.5;
 }
+.problem_solution-title span {
+  background: -webkit-linear-gradient(transparent 60%, #F5A623 60%);
+  background: -moz-linear-gradient(transparent 60%, #F5A623 60%);
+  background: -ms-linear-gradient(transparent 60%, #F5A623 60%);
+  background: -o-linear-gradient(transparent 60%, #F5A623 60%);
+  background: linear-gradient(transparent 60%, #F5A623 60%);
+}
 @media (max-width: 768px) {
   .problem_solution-title {
     font-size: 30px;
@@ -1439,9 +1525,12 @@ li {
 .banner_small-container .banner_small-desc .small_banner-textLink {
   margin: 27px auto auto;
   border: 1px solid #fff;
+  width: 200px;
 }
 .banner_small-container .banner_small-desc .small_banner-textLink a {
   color: white;
+  padding: 17px 0;
+  font-weight: 700;
 }
 
 .review_wrapper {
@@ -1747,7 +1836,7 @@ li {
 }
 
 .banner {
-  background-image: url("../images/HOMe/cta.png");
+  background-image: url("../images/HOMe/cta-1280-260.png");
   background-size: cover;
   position: relative;
   height: 260px;
@@ -1765,6 +1854,10 @@ li {
 }
 .banner_container .banner-btn {
   margin: 13px auto 17px;
+  width: 280px;
+}
+.banner_container .banner-btn a {
+  padding: 17px 0;
 }
 .banner_container .contact_txtbtn a {
   color: white;
